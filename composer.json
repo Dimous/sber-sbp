@@ -1,0 +1,19 @@
+{
+  "name": "dimous/sber-sbp",
+  "description": "description",
+  "minimum-stability": "dev",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "dimous",
+      "email": "kasimowsky@gmail.com"
+    }
+  ],
+  "require": {
+  },
+  "autoload" : {
+    "psr-4" : {
+      "Io\\Github\\Dimous\\Sber\\" : "src/Io/Github/Dimous/Sber/"
+    }
+  }
+}

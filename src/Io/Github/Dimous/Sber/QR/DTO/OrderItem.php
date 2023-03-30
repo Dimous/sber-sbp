@@ -14,7 +14,7 @@ namespace Io\Github\Dimous\Sber\QR\DTO {
             $this->__nTotal = $nTotal;
             $this->__nQuantity = $nQuantity;
             $this->__sTitle = Util::sanitizeString($sTitle, 256);
-            $this->__sDescription = Util::sanitizeString($sDescription, 1024);
+            $this->__sDescription = Util::sanitizeString($sDescription, 512);
         }
 
         //---

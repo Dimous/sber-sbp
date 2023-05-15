@@ -28,7 +28,7 @@ namespace Io\Github\Dimous\Sber\QR {
 
         public static function sanitizeString(string $sInput, int $nLimit): string
         {
-            return mb_strimwidth(preg_replace("#([!\"\#\$%&'()*+,\-./:;<=>?@\[\]^_`{|}~])#", "\\\\$1", preg_replace("/[^\S\r\n]+/", " ", preg_replace("/[^([:alnum:][:punct:])]/u", " ", strip_tags($sInput)))), 0, $nLimit, "...");
+            return mb_strimwidth(preg_replace("#([!\"\#\$%&'()*+\-/<=>?@\[\]^_`{|}~])#", "\\\\$1", preg_replace("/[^\S\r\n]+/", " ", preg_replace("/[^([:alnum:][:punct:])]/u", " ", strip_tags($sInput)))), 0, $nLimit, "...");
         }
     }
 }

@@ -25,7 +25,7 @@ namespace Io\Github\Dimous\Sber\QR {
 
         private const
             TOKEN_CACHE_TIME = 50, // токен выдаётся на 60 секунд, но для страховки храним 50 (ещё нужно учесть время на запрос)
-            BASE_URI = "https://api.sberbank.ru:8443/prod/",
+            BASE_URI = "https://mc.api.sberbank.ru/prod/",
             AUTH_SCOPE_CREATE = "https://api.sberbank.ru/qr/order.create",
             AUTH_SCOPE_STATUS = "https://api.sberbank.ru/qr/order.status",
             AUTH_SCOPE_REVOKE = "https://api.sberbank.ru/qr/order.revoke",

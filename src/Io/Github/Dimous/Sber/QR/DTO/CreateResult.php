@@ -55,7 +55,7 @@ namespace Io\Github\Dimous\Sber\QR\DTO {
         /**
          * Ссылка на считывание QR code
          */
-        public function getOrderFromUrl(): ?string
+        public function getOrderFormUrl(): ?string
         {
             return @$this->__aSource["order_form_url"];
         }
